@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тестовое задание</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"></script-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+			<div class="head">
+				<div class="title">
+					<h1>Тестовое задание. Динамика цен акций</h1>
+				</div>
+			</div>
+			<div class="body">
+				<div class="row">
+					<div class="col left">
+						<div class="overflow">
+							<table class="table">
+								<thead>
+								<tr>
+									<th>Дата</th>
+									<th>Инструмент (ценная бумага)</th>
+									<th>Стоимость</th>
+								</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+						<button class="btn add popup-open">Добавить</button>
+					</div>
+					<div class="col right">
+						<div class="chart">
+							<div id="myChart" style="width: 100%; height: 500px"></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="popup">
+		<div class="popup__wrap">
+			<div class="popup__head">
+				<div class="popup__close">
+					<span class="popup-close" data-popup-close>X</span>
+				</div>
+				<div class="popup__title">Добавить новый элемент</div>
+			</div>
+			<div class="popup__body">
+				<form class="popup__form" id="popup_form">
+					<div class="popup__inp">
+						<input type="date" id="popup__inp_date" class="inp" placeholder="Дата" name="date" required>
+					</div>
+					<div class="popup__inp">
+						<input type="text" id="popup__inp_share" class="inp" placeholder="Акция" name="share" required>
+					</div>
+					<div class="popup__inp">
+						<input type="number" id="popup__inp_price" class="inp" placeholder="Стоимость" name="price" required>
+					</div>
+					<div class="popup__buttons">
+						<div class="row -center">
+							<div class="col popup__btn">
+								<button id="submit_btn" type="submit" class="btn" data-popup-open>Добавить</button>
+							</div>
+							<div class="col popup__btn">
+								<span class="close popup-close">Отмена</span>
+							</div>							
+						</div>						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
